@@ -1,0 +1,34 @@
+// {
+    //   slug: "coaching-platform",
+    //   title: "Multi-Sport Coaching Platform",
+    //   summary:
+    //     "Real-time team coaching platform featuring WebSockets instant messaging, Stripe subscription management, and multi-organization RBAC.",
+    //   description:
+    //     "Developed a real-time coaching and team communication platform with WebSocket-powered instant messaging, claim-based authentication, and multi-organization role-based access control across coaching tiers. Integrated Stripe subscription management for coaching plan billing with webhook-driven subscription lifecycle management, plan upgrades, and recurring payment handling.",
+    //   stack: [
+    //     "Next.js",
+    //     "TypeScript",
+    //     "Node.js",
+    //     "WebSockets",
+    //     "Stripe",
+    //     "JWT",
+    //     "RBAC",
+    //     "Shadcn UI",
+    //   ],
+    //   role: "Full Stack Developer",
+    //   metrics: [
+    //     "WebSocket-powered instant messaging",
+    //     "Multi-organization RBAC",
+    //     "Webhook-driven Stripe plan management",
+    //   ],
+    //   bullets: [
+    //     "Developed real-time coaching platform with WebSocket instant messaging and multi-organization role-based access control.",
+    //     "Integrated Stripe subscription management for coaching plan billing with webhook-driven plan upgrades and recurring payments.",
+    //   ],
+    //   confidential: true,
+    //   thumbnail:
+    //     "https://images.unsplash.com/photo-1517649763962-0c623266010b?auto=format&fit=crop&w=800&q=80",
+    //   images: [
+    //     "https://images.unsplash.com/photo-1517649763962-0c623266010b?auto=format&fit=crop&w=1200&q=80",
+    //   ],
+    // },

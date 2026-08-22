@@ -1,0 +1,55 @@
+# Rao Abrar Ahmad — Front-End Focused Full Stack Developer
+
+> Full Stack Developer with 3+ years of experience designing, building, and shipping production-grade web and mobile applications across the complete MERN stack, from REST API architecture and database design to cloud deployment and performance optimization. Proven across diverse project types including SaaS platforms, e-commerce systems, real-time applications, and mobile apps, with hands-on expertise in Node.js, Express.js, React.js, Next.js, TypeScript, MongoDB, AWS, and Stripe. Experienced team lead who has managed full client lifecycles end-to-end, mentored junior developers, and consistently delivered scalable, maintainable full-stack solutions in fast-paced environments.
+
+## Core Technical Expertise
+
+- **Frontend Frameworks**: React.js, Next.js, TypeScript, JavaScript (ES6+), React Native (Expo), HTML5, CSS3, Tailwind CSS, Shadcn UI, Material UI, Framer Motion, GSAP, Astro, Remix.
+- **Backend & Microservices**: Node.js, Express.js, REST API Design, JWT Authentication, Role-Based Access Control (RBAC), WebSockets, FastAPI (Python).
+- **Databases & Caching**: MongoDB, MongoDB Atlas, MSSQL, MySQL, PostgreSQL, SQLite, Firebase Firestore, Redis.
+- **AI & Automation**: OpenAI API, LLM API Integration, AI-Powered Feature Development, Automated Data Pipelines.
+- **Cloud, DevOps & Hosting**: AWS (S3, EC2, Lambda), Heroku, Cloudflare, Vercel, Railway, Firebase, CI/CD Pipelines.
+- **Payments, Media & Email**: Stripe (Payments, Subscriptions, Webhooks, Payouts), Cloudinary, AWS S3, SendGrid, Mailchimp.
+- **Monitoring & Analytics**: Sentry, Google Tag Manager (GTM), Google Analytics (GA), Microsoft Clarity.
+- **Development Tools & Methods**: Git, GitHub, Postman, Agile/Scrum, Sprint Planning, Code Review, Technical Mentoring.
+
+## Professional Experience
+
+### Full Stack Developer — RF Technologies (Sep 2022 – Mar 2026)
+*Islamabad, Pakistan | On-site*
+- Architected and delivered a SaaS event ticketing platform from scratch: Next.js (TypeScript) frontend, Node.js marketing module backend, and REST API integration, shipping the full production build across multiple environments in 4 weeks; platform now hosts 4,000+ events, has processed 260,000+ ticket sales, and achieves 3x year-over-year creator growth with 90+ desktop and 80+ mobile PageSpeed scores.
+- Engineered the full-stack photo and document printing e-commerce platform end-to-end: Next.js frontend on Cloudflare, Node.js/Express.js REST API on Heroku and AWS, covering physical print orders, digital document sales, Stripe payment processing with webhook handling, automated PDF generation, and email attachment delivery for digital products.
+- Built a full-featured organizer CMS and internal analytics dashboard with server-side rendering, role-based access control (Super Admin, Organizer, Staff), Stripe subscription billing with plan management, and real-time financial reporting using Chart.js and Recharts; integrated AWS S3, Cloudinary, Sentry, GTM, and Google Analytics across production platforms.
+- Served as Lead for a development team owning sprint planning, task assignments, code reviews, and technical mentoring while independently managing full client lifecycles from requirement gathering and scoping through development, QA, revision cycles, and project close across 100+ production engagements.
+- Collaborated with 3 external digital marketing agencies and creative studios within multi-team partner workflows, co-delivering Shopify storefronts, Shopify Plus customizations, and 10+ zero-downtime platform migrations from Magento, WooCommerce, and Etsy to Shopify with zero data loss.
+
+### Full Stack Developer — Technoworld Solutions (Oct 2025 – Mar 2026)
+*Remote | Contract*
+- Engineered a full-stack travel booking platform from scratch using Next.js and Node.js/Express.js, delivering dynamic property listings, advanced search and filtering, and a complete end-to-end secure booking and payment workflow.
+- Built a custom e-commerce platform with product management, shopping cart, inventory tracking, and Stripe-integrated checkout with order management and fulfillment workflows.
+- Developed RESTful APIs with JWT authentication and role-based access control (RBAC) across multiple MERN stack applications, applying consistent security patterns including input validation, rate limiting, and secure session management.
+
+## Featured Portfolio Projects
+
+- [SaaS Event Ticketing Platform](https://raoabrar.vercel.app/projects/event-ticketing): Production SaaS ticketing platform hosting 4,000+ events and 260,000+ ticket sales with organizer CMS, marketing module, and real-time financial analytics. (Stack: Next.js, TypeScript, Node.js, MSSQL, Stripe, AWS, Shadcn UI, Chart.js, Recharts, JWT, RBAC)
+- [Photo & Document Printing E-commerce](https://raoabrar.vercel.app/projects/ozelu): Full-stack photo and document printing e-commerce platform covering physical print orders, digital sales, Stripe payment webhooks, and automated PDF delivery. (Stack: Next.js, Node.js, Express.js, MongoDB, Stripe, AWS S3, Cloudinary, Heroku, Cloudflare, Sentry, GTM, Google Analytics)
+- [SoSync — Crowdsourced Disaster Alert & Safety App](https://raoabrar.vercel.app/projects/sosync): Cross-platform disaster alert app with real-time reporting, FCM push notifications, OpenAI report analysis, and interactive Google Maps mapping. (Stack: React Native, Expo, TypeScript, Firebase Firestore, Firebase Cloud Messaging, Firebase Storage, OpenAI API, Google Maps SDK, Sentry)
+- [Al-Hayat Blue Pottery — Headless Storefront](https://raoabrar.vercel.app/projects/al-hayat): Fully responsive headless e-commerce storefront with dynamic product pages, category filtering, custom MongoDB Atlas CMS, and Cloudinary pipeline. (Stack: Next.js, TypeScript, Tailwind CSS, MongoDB Atlas, Cloudinary, Vercel, CI/CD)
+- [DailyPin — Windows Desktop Task Widget](https://raoabrar.vercel.app/projects/dailypin): Ultra-lightweight (~4.2 MB executable, ~30MB RAM), frameless, transparent Windows desktop widget built with Tauri v2, Rust, React 19, and Vite. (Stack: Tauri v2, Rust, React 19, TypeScript, Vite, Vanilla CSS, Lucide React)
+- [Full-Stack Travel Booking Platform](https://raoabrar.vercel.app/projects/travel-booking): Full-stack property reservation platform with dynamic property listings, advanced search & filtering, secure booking workflows, and JWT/RBAC security. (Stack: Next.js, TypeScript, Node.js, Express.js, MongoDB, Stripe, JWT, RBAC, Tailwind CSS)
+
+## Education
+
+- **BSc Information Technology** — Virtual University of Pakistan (2024 – 2026)
+- **BSc Computer Science** — University of Sargodha (2017 – 2019)
+
+## Contact & Online Profiles
+
+- **Website**: https://raoabrar.vercel.app
+- **Email**: mailto:raoabrar629@gmail.com
+- **WhatsApp**: https://wa.me/+923407985784?text=Hi%20Rao,%20I'm%20interested%20in%20working%20with%20you!
+- **LinkedIn**: https://www.linkedin.com/in/rao-abrar-ahmad
+- **GitHub**: https://github.com/Rao-Abrar-Ahmad
+- **Upwork**: https://www.upwork.com/freelancers/~0197ad2a3b6d861f56
+- **Fiverr**: https://www.fiverr.com/rsadeveloper
+- **Resume Document**: https://docs.google.com/document/d/1kuKWZfv5tsO1tM83eZm8cJXDnisLz75T810Q8aIubYs/edit?usp=sharing

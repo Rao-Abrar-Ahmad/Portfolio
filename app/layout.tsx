@@ -24,12 +24,49 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  title: Site.title,
+  metadataBase: new URL(Site.url),
+  title: {
+    default: Site.title,
+    template: `%s | ${Site.name}`,
+  },
   description: Site.description,
+  keywords: [
+    "Rao Abrar Ahmad",
+    "Full Stack Developer",
+    "Front-End Developer",
+    "React Developer",
+    "Next.js Developer",
+    "Node.js Developer",
+    "Nest.js Developer",
+    "FastAPI Developer",
+    "Shopify Developer",
+    "SaaS Developer",
+    "E-commerce Developer",
+    "Freelance Developer Rawalpindi",
+    "Pakistan Full Stack Developer",
+  ],
+  authors: [{ name: Site.name, url: Site.url }],
+  creator: Site.name,
+  publisher: Site.name,
+  category: "Technology",
+  alternates: {
+    canonical: "/",
+  },
   openGraph: {
+    type: "website",
+    locale: "en_US",
+    url: Site.url,
     title: Site.title,
     description: Site.description,
-    images: [Site.profilePic],
+    siteName: Site.name,
+    images: [
+      {
+        url: Site.profilePic,
+        width: 800,
+        height: 800,
+        alt: Site.name,
+      },
+    ],
   },
   robots: {
     index: true,
@@ -48,10 +85,17 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: Site.title,
     description: Site.description,
+    creator: "@rao_abrar_ahmad",
+    site: "@rao_abrar_ahmad",
     images: [Site.profilePic],
   },
   icons: {
-    icon: "/favicon.ico",
+    icon: [
+      { url: "/favicon.ico", sizes: "any" },
+      { url: "/apple-touch-icon.png", type: "image/png" },
+    ],
+    shortcut: "/favicon.ico",
+    apple: "/apple-touch-icon.png",
   },
 };
 
