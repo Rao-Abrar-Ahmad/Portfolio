@@ -33,7 +33,7 @@ const experiences: ExperienceRole[] = [
       "Optimized client-side rendering & Core Web Vitals, reducing LCP page load times by over 40%.",
       "Integrated multi-currency Stripe checkout and real-time social synchronization engines.",
     ],
-    rotation: "rotate-2",
+    rotation: "-rotate-1",
     decoration: "tack",
   },
   {
@@ -47,7 +47,7 @@ const experiences: ExperienceRole[] = [
       "Architected event ticketing & photo printing platforms handling 260k+ transactions with 99.9% uptime.",
       "Established CI/CD deployment pipelines, automated test suites, and strict code review standards across projects.",
     ],
-    rotation: "-rotate-1",
+    rotation: "rotate-2",
     decoration: "tape",
   },
 ];
@@ -144,7 +144,7 @@ export function ExperienceTimeline() {
         </svg>
 
         {/* Experience Role Cards */}
-        <div className="space-y-12 relative z-10">
+        <div className="space-y-16 relative z-10">
           {experiences.map((exp, idx) => (
             <div
               key={idx}

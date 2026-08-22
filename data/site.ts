@@ -3,7 +3,7 @@ export const Site = {
   title: "Rao Abrar Ahmad — Front-End Focused Full Stack Developer",
   description:
     "Front-End Focused Full Stack Developer with 3+ years of experience in React, Next.js, Node.js, Nest.js, FastAPI & Shopify. SaaS & E-commerce expert based in Rawalpindi, Pakistan.",
-  url: "https://raoabrar.dev",
+  url: "https://raoabrar.vercel.app",
   ogImage:
     "https://res.cloudinary.com/demo/image/upload/v1631234567/rao_og_image.png",
   location: "Rawalpindi, Punjab, Pakistan",
@@ -37,7 +37,7 @@ export const Site = {
     linkedin: "https://www.linkedin.com/in/rao-abrar-ahmad",
     email: "raoabrar629@gmail.com",
     tel: "+923407985784",
-    website: "https://codebyrsa.com",
+    website: "https://raoabrar.vercel.app",
     whatsapp: "https://wa.me/+923407985784",
     instagram: "https://www.instagram.com/raoabrar629/",
     fiveer: "https://www.fiverr.com/rsadeveloper",

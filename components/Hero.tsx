@@ -32,8 +32,11 @@ export function Hero() {
             <span className="font-bold underline decoration-pen-blue decoration-2">
               Next.js
             </span>
-            , <span className="font-bold">Node.js</span>, Nest.js, FastAPI &
-            Shopify.
+            , <span className="font-bold">Node.js</span>, Nest.js, FastAPI &{" "}
+            <span className="font-bold underline decoration-pen-green decoration-2">
+              Shopify
+            </span>
+            .
           </p>
 
           <div className="flex flex-wrap items-center gap-4 pt-2 relative w-full sm:w-auto">
