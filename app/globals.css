@@ -1,0 +1,97 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg-paper: #fdfbf7;
+  --text-pencil: #2d2d2d;
+  --muted-paper: #e5e0d8;
+  --accent-red: #ff4d4d;
+  --pen-blue: #2d5da1;
+  --postit: #fff9c4;
+}
+
+body {
+  background-color: var(--bg-paper);
+  color: var(--text-pencil);
+  background-image: radial-gradient(#e5e0d8 1.5px, transparent 1.5px);
+  background-size: 24px 24px;
+  font-family: var(--font-patrick), cursive, sans-serif;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-kalam), cursive, sans-serif;
+}
+
+/* Custom Wobbly Border Utilities */
+.wobbly-border-1 {
+  border-radius: 255px 15px 225px 15px / 15px 225px 15px 255px;
+}
+
+.wobbly-border-2 {
+  border-radius: 18px 225px 15px 255px / 255px 15px 225px 15px;
+}
+
+.wobbly-border-3 {
+  border-radius: 255px 25px 225px 25px / 25px 225px 25px 255px;
+}
+
+.wobbly-badge {
+  border-radius: 20px 220px 20px 220px / 220px 20px 220px 20px;
+}
+
+.wobbly-circle {
+  border-radius: 60% 40% 70% 30% / 40% 50% 60% 50%;
+}
+
+.wobbly-input {
+  border-radius: 255px 15px 225px 15px / 15px 225px 15px 255px;
+}
+
+/* Tape decoration element */
+.tape-strip {
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  transform: translateX(-50%) rotate(-2deg);
+  width: 90px;
+  height: 24px;
+  background-color: rgba(229, 224, 216, 0.7);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
+  backdrop-filter: blur(1px);
+  z-index: 10;
+  border-left: 2px dashed rgba(45, 45, 45, 0.2);
+  border-right: 2px dashed rgba(45, 45, 45, 0.2);
+}
+
+/* Thumbtack decoration element */
+.thumbtack {
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 18px;
+  height: 18px;
+  background-color: #ff4d4d;
+  border: 2px solid #2d2d2d;
+  border-radius: 50%;
+  box-shadow: 2px 2px 0px 0px #2d2d2d;
+  z-index: 10;
+}
+
+/* Hand-drawn button active states */
+.btn-hand-drawn {
+  transition: transform 100ms ease, box-shadow 100ms ease, background-color 150ms ease;
+}
+
+.btn-hand-drawn:hover {
+  transform: translate(-2px, -2px) rotate(1deg);
+  box-shadow: 6px 6px 0px 0px #2d2d2d;
+}
+
+.btn-hand-drawn:active {
+  transform: translate(4px, 4px) rotate(0deg);
+  box-shadow: 0px 0px 0px 0px #2d2d2d;
+}
