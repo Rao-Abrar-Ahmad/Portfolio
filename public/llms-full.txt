@@ -21,6 +21,14 @@ Full Stack Developer with 3+ years of experience designing, building, and shippi
 
 ## Professional Career History
 
+### Full Stack Developer — Freelance
+- **Period**: Oct 2025 – Present
+- **Location**: Remote (Freelance)
+- **Key Contributions**:
+  - Delivered custom full-stack web applications and SaaS solutions for global clients using React, Next.js, Node.js, TypeScript, and MongoDB.
+  - Architected scalable RESTful APIs, integrated Stripe payment gateways, automated workflows, and implemented responsive frontend interfaces focused on performance and UX.
+  - Managed end-to-end project lifecycles from requirement scoping and client communication to deployment on AWS, Vercel, and Cloudflare, ensuring high reliability and performance.
+
 ### Full Stack Developer — RF Technologies
 - **Period**: Sep 2022 – Mar 2026
 - **Location**: Islamabad, Pakistan (On-site)

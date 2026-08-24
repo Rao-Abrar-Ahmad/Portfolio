@@ -15,6 +15,12 @@
 
 ## Professional Experience
 
+### Full Stack Developer — Freelance (Oct 2025 – Present)
+*Remote | Freelance*
+- Delivered custom full-stack web applications and SaaS solutions for global clients using React, Next.js, Node.js, TypeScript, and MongoDB.
+- Architected scalable RESTful APIs, integrated Stripe payment gateways, automated workflows, and implemented responsive frontend interfaces focused on performance and UX.
+- Managed end-to-end project lifecycles from requirement scoping and client communication to deployment on AWS, Vercel, and Cloudflare, ensuring high reliability and performance.
+
 ### Full Stack Developer — RF Technologies (Sep 2022 – Mar 2026)
 *Islamabad, Pakistan | On-site*
 - Architected and delivered a SaaS event ticketing platform from scratch: Next.js (TypeScript) frontend, Node.js marketing module backend, and REST API integration, shipping the full production build across multiple environments in 4 weeks; platform now hosts 4,000+ events, has processed 260,000+ ticket sales, and achieves 3x year-over-year creator growth with 90+ desktop and 80+ mobile PageSpeed scores.

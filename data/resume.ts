@@ -44,6 +44,18 @@ export const resumeData = {
 
   experience: [
     {
+      company: "Freelance",
+      role: "Full Stack Developer",
+      period: "Oct 2025 – Present",
+      location: "Remote",
+      type: "Freelance",
+      bullets: [
+        "Delivered custom full-stack web applications and SaaS solutions for global clients using React, Next.js, Node.js, TypeScript, and MongoDB.",
+        "Architected scalable RESTful APIs, integrated Stripe payment gateways, automated workflows, and implemented responsive frontend interfaces focused on performance and UX.",
+        "Managed end-to-end project lifecycles from requirement scoping and client communication to deployment on AWS, Vercel, and Cloudflare, ensuring high reliability and performance.",
+      ],
+    },
+    {
       company: "RF Technologies",
       role: "Full Stack Developer",
       period: "Sep 2022 – Mar 2026",

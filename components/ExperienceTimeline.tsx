@@ -23,6 +23,20 @@ type ExperienceRole = {
 
 const experiences: ExperienceRole[] = [
   {
+    company: "Freelance",
+    title: "Full Stack Developer",
+    period: "Oct 2025 – Present",
+    type: "Freelance",
+    location: "Remote",
+    bullets: [
+      "Delivered custom full-stack web applications and SaaS solutions using React, Next.js, Node.js, TypeScript, and MongoDB.",
+      "Architected scalable RESTful APIs, integrated Stripe payment gateways, automated workflows, and optimized UX.",
+      "Managed end-to-end project lifecycles from scoping to cloud deployment on AWS, Vercel, and Cloudflare.",
+    ],
+    rotation: "rotate-1",
+    decoration: "tape",
+  },
+  {
     company: "Technoworld Solutions",
     title: "Full Stack Developer",
     period: "Oct 2025 – Mar 2026",
