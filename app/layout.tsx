@@ -8,12 +8,14 @@ const kalam = Kalam({
   weight: ["700"],
   subsets: ["latin"],
   variable: "--font-kalam",
+  display: "swap",
 });
 
 const patrickHand = Patrick_Hand({
   weight: ["400"],
   subsets: ["latin"],
   variable: "--font-patrick",
+  display: "swap",
 });
 
 export const viewport: Viewport = {

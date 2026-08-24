@@ -17,13 +17,13 @@ body {
   color: var(--text-pencil);
   background-image: radial-gradient(#e5e0d8 1.5px, transparent 1.5px);
   background-size: 24px 24px;
-  font-family: var(--font-patrick), cursive, sans-serif;
+  font-family: var(--font-patrick), "Caveat", "Comic Sans MS", cursive, sans-serif;
   min-height: 100vh;
   overflow-x: hidden;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: var(--font-kalam), cursive, sans-serif;
+  font-family: var(--font-kalam), "Caveat", "Comic Sans MS", cursive, sans-serif;
 }
 
 /* Custom Wobbly Border Utilities */
