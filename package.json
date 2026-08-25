@@ -1,7 +1,28 @@
 {
-  "name": "rao-portfolio",
-  "version": "0.1.0",
-  "private": true,
+  "name": "nextjs-hand-drawn-portfolio-template",
+  "version": "1.0.0",
+  "description": "A 100/100 PageSpeed, SEO/AEO/GEO-optimized developer portfolio template built with Next.js 15, TypeScript, Hand-Drawn Design System, Framer Motion, GSAP, and automated llms.txt generation.",
+  "license": "MIT",
+  "author": "Rao Abrar Ahmad <raoabrar629@gmail.com> (https://raoabrar.vercel.app)",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rao-Abrar-Ahmad/Portfolio.git"
+  },
+  "keywords": [
+    "nextjs",
+    "nextjs15",
+    "portfolio-template",
+    "developer-portfolio",
+    "hand-drawn-design",
+    "pagespeed-100",
+    "seo-optimized",
+    "aeo-geo",
+    "llms-txt",
+    "framer-motion",
+    "gsap-scrolltrigger",
+    "typescript",
+    "tailwind-css"
+  ],
   "scripts": {
     "dev": "next dev",
     "generate:llms": "npx tsx scripts/generate-llms.ts",

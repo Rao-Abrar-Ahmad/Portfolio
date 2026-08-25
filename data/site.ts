@@ -1,3 +1,10 @@
+/**
+ * Portfolio Site Configuration & Personal Metadata
+ * ------------------------------------------------
+ * Customize this file with your own personal details, SEO metadata, and social profiles.
+ * All changes in this file dynamically update the website, metadata, and generated llms.txt context!
+ */
+
 export const Site = {
   name: "Rao Abrar Ahmad",
   title: "Rao Abrar Ahmad — Front-End Focused Full Stack Developer",
@@ -5,7 +12,7 @@ export const Site = {
     "Front-End Focused Full Stack Developer with 3+ years of experience in React, Next.js, Node.js, Nest.js, FastAPI & Shopify. SaaS & E-commerce expert based in Rawalpindi, Pakistan.",
   url: "https://raoabrar.vercel.app",
   ogImage:
-    "https://res.cloudinary.com/demo/image/upload/v1631234567/rao_og_image.png",
+    "https://res.cloudinary.com/dcxfsvq4i/image/upload/v1777374025/Portfolios/circle-photo-transparent_f724su.jpg",
   location: "Rawalpindi, Punjab, Pakistan",
   email: "raoabrar629@gmail.com",
   whatsappUrl:
