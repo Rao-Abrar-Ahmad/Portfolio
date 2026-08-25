@@ -1,17 +1,16 @@
 # 🎨 Next.js Hand-Drawn Developer Portfolio Template
 
-> A 100/100 PageSpeed, ultra-fast, SEO/AEO/GEO-optimized developer portfolio template built with **Next.js 15 (App Router)**, **TypeScript**, **Tailwind CSS**, **Framer Motion**, **GSAP + ScrollTrigger**, and automated **`llms.txt`** generation.
-
-![PageSpeed Score 100/100](public/pagespeed.png)
+> A 100/100 PageSpeed, 5-minute customizable, ultra-fast, SEO/AEO/GEO-optimized developer portfolio template built with **Next.js 15 (App Router)**, **TypeScript**, **Tailwind CSS**, **Framer Motion**, **GSAP + ScrollTrigger**, and automated **`llms.txt`** generation.
 
 [![Next.js 15](https://img.shields.io/badge/Next.js-15.1-black?logo=next.js)](https://nextjs.org/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.7-blue?logo=typescript)](https://www.typescriptlang.org/)
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind-3.4-38bdf8?logo=tailwind-css)](https://tailwindcss.com/)
 [![PageSpeed 100%](https://img.shields.io/badge/PageSpeed-100%2F100-00e676?logo=googlechrome)](https://pagespeed.web.dev/)
+[![5-Min Setup](https://img.shields.io/badge/Customization-5--Min%20Setup-ffaa00?logo=lightning)](https://github.com/Rao-Abrar-Ahmad/Portfolio#-customization-in-5-minutes)
 [![SEO / AEO / GEO](https://img.shields.io/badge/Optimization-SEO%20%7C%20AEO%20%7C%20GEO-ff4d4d)](https://schema.org)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
----
+## ![PageSpeed Score 100/100](public/pagespeed.png)
 
 ## 🌟 Why Use This Template?
 
@@ -126,13 +125,13 @@ export const resumeData = {
 
 ## 🔍 SEO, AEO & GEO Optimization Architecture
 
-| Feature | Implementation | Purpose |
-| :--- | :--- | :--- |
-| **Technical SEO** | `metadataBase`, Canonical URLs, OpenGraph, Twitter Cards, Keywords | Complete Google & Bing indexing |
-| **Robots Policy** | [`app/robots.ts`](app/robots.ts) | Unrestricted crawling for `GPTBot`, `ClaudeBot`, `PerplexityBot` |
-| **Dynamic Sitemap** | [`app/sitemap.ts`](app/sitemap.ts) | Auto-generates `/sitemap.xml` for all static & project detail routes |
-| **AI Context Files** | [`scripts/generate-llms.ts`](scripts/generate-llms.ts) | Automatically outputs `/llms.txt` and `/llms-full.txt` during build |
-| **Structured Data** | [`components/PersonSchema.tsx`](components/PersonSchema.tsx) | `Person`, `ProfilePage`, `ItemList`, and `FAQPage` JSON-LD schemas |
+| Feature              | Implementation                                                     | Purpose                                                              |
+| :------------------- | :----------------------------------------------------------------- | :------------------------------------------------------------------- |
+| **Technical SEO**    | `metadataBase`, Canonical URLs, OpenGraph, Twitter Cards, Keywords | Complete Google & Bing indexing                                      |
+| **Robots Policy**    | [`app/robots.ts`](app/robots.ts)                                   | Unrestricted crawling for `GPTBot`, `ClaudeBot`, `PerplexityBot`     |
+| **Dynamic Sitemap**  | [`app/sitemap.ts`](app/sitemap.ts)                                 | Auto-generates `/sitemap.xml` for all static & project detail routes |
+| **AI Context Files** | [`scripts/generate-llms.ts`](scripts/generate-llms.ts)             | Automatically outputs `/llms.txt` and `/llms-full.txt` during build  |
+| **Structured Data**  | [`components/PersonSchema.tsx`](components/PersonSchema.tsx)       | `Person`, `ProfilePage`, `ItemList`, and `FAQPage` JSON-LD schemas   |
 
 ---
 
