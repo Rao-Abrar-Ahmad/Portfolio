@@ -6,6 +6,7 @@
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.7-blue?logo=typescript)](https://www.typescriptlang.org/)
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind-3.4-38bdf8?logo=tailwind-css)](https://tailwindcss.com/)
 [![PageSpeed 100%](https://img.shields.io/badge/PageSpeed-100%2F100-00e676?logo=googlechrome)](https://pagespeed.web.dev/)
+[![PWA Ready](https://img.shields.io/badge/PWA-Installable-0070f3?logo=pwa)](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps)
 [![5-Min Setup](https://img.shields.io/badge/Customization-5--Min%20Setup-ffaa00?logo=lightning)](https://github.com/Rao-Abrar-Ahmad/Portfolio#-customization-in-5-minutes)
 [![SEO / AEO / GEO](https://img.shields.io/badge/Optimization-SEO%20%7C%20AEO%20%7C%20GEO-ff4d4d)](https://schema.org)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
@@ -18,7 +19,8 @@ Most developer portfolios look identical—sterile grid containers, generic grad
 
 Beyond aesthetics, it is engineered for **unmatched speed, search visibility, and AI search engine discovery**:
 
-- ⚡ **100/100 Core Web Vitals & PageSpeed**: Flawless 100/100 performance scores across Performance, Accessibility, Best Practices, and SEO.
+- ⚡ **100/100 Core Web Vitals & PageSpeed**: Flawless 100/100 performance scores across Performance, Accessibility, Best Practices, and SEO with integrated Vercel Speed Insights.
+- 📱 **Installable Progressive Web App (PWA)**: Web App Manifest ([`app/manifest.ts`](app/manifest.ts)), offline service worker caching ([`public/sw.js`](public/sw.js)), high-res icons, and an interactive hand-drawn "Install App" button for mobile & desktop installation.
 - 🎨 **Hand-Drawn Design System**: Custom wobbly border radius algorithms, pencil black `#2d2d2d`, warm paper `#fdfbf7`, red correction marker `#ff4d4d`, blue ballpoint pen `#2d5da1`, post-it yellow `#fff9c4`, Kalam & Patrick Hand Google Fonts, paper dot texture, tape strips, and thumbtacks.
 - 📜 **GSAP + ScrollTrigger Timeline**: Animated vertical squiggly dashed line that "draws itself" down the page as the user scrolls, animating experience role cards into place.
 - 🔀 **Next.js App Router Intercepted Route Modals**: Clicking a project card opens `@modal/(.)projects/[slug]` as a smooth Framer Motion overlay over the grid without losing page context. Direct links or hard refreshes load `/projects/[slug]` as a standalone full page.
@@ -128,6 +130,8 @@ export const resumeData = {
 | Feature              | Implementation                                                     | Purpose                                                              |
 | :------------------- | :----------------------------------------------------------------- | :------------------------------------------------------------------- |
 | **Technical SEO**    | `metadataBase`, Canonical URLs, OpenGraph, Twitter Cards, Keywords | Complete Google & Bing indexing                                      |
+| **PWA Support**      | [`app/manifest.ts`](app/manifest.ts) & [`public/sw.js`](public/sw.js) | Full mobile/desktop PWA installability & offline caching            |
+| **Performance Insights** | `@vercel/speed-insights`                                       | Real-time Core Web Vitals (INP, LCP, CLS) performance monitoring     |
 | **Robots Policy**    | [`app/robots.ts`](app/robots.ts)                                   | Unrestricted crawling for `GPTBot`, `ClaudeBot`, `PerplexityBot`     |
 | **Dynamic Sitemap**  | [`app/sitemap.ts`](app/sitemap.ts)                                 | Auto-generates `/sitemap.xml` for all static & project detail routes |
 | **AI Context Files** | [`scripts/generate-llms.ts`](scripts/generate-llms.ts)             | Automatically outputs `/llms.txt` and `/llms-full.txt` during build  |
