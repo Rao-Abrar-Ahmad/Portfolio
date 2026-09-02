@@ -34,6 +34,7 @@ export function AboutMe() {
     "",
     "",
   ]);
+  const [activeParagraphIdx, setActiveParagraphIdx] = useState<number>(0);
   const [isStreaming, setIsStreaming] = useState(false);
   const [hasTriggered, setHasTriggered] = useState(false);
   const sectionRef = useRef<HTMLDivElement>(null);
@@ -72,6 +73,7 @@ export function AboutMe() {
       const targetParagraph = fullStoryText[pIdx];
       currentText[pIdx] += targetParagraph[charIdx];
       setDisplayedParagraphs([...currentText]);
+      setActiveParagraphIdx(pIdx);
       charIdx++;
 
       if (charIdx >= targetParagraph.length) {
@@ -230,7 +232,7 @@ export function AboutMe() {
             {displayedParagraphs.map((para, idx) => (
               <p key={idx} className="relative">
                 {para}
-                {isStreaming && idx === displayedParagraphs.findIndex((p) => p.length < fullStoryText[displayedParagraphs.indexOf(p)] || p === "") && (
+                {isStreaming && idx === activeParagraphIdx && (
                   <span className="inline-block w-2.5 h-6 bg-accent-red ml-1 animate-pulse align-middle" />
                 )}
               </p>
