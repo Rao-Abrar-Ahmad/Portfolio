@@ -1,25 +1,53 @@
-import React from "react";
+"use client";
+
+import React, { useState } from "react";
 import {
   Mail,
-  MessageSquare,
   MapPin,
   Linkedin,
   Github,
   Twitter,
-  Send,
+  Briefcase,
+  Layers,
+  Code2,
+  Copy,
+  Check,
 } from "lucide-react";
 import { Site } from "@/data/site";
 import { TapeStrip } from "./HandDrawnDecorations";
 
 export function Contact() {
+  const [copied, setCopied] = useState(false);
+
+  const handleCopyEmail = (e: React.MouseEvent) => {
+    e.preventDefault();
+    if (typeof window !== "undefined" && navigator.clipboard) {
+      navigator.clipboard.writeText(Site.email);
+      setCopied(true);
+      setTimeout(() => setCopied(false), 3000);
+    }
+  };
+
   const socialLinks = [
     { name: "LinkedIn", url: Site.socials.linkedin, icon: Linkedin },
     { name: "GitHub", url: Site.socials.github, icon: Github },
-    { name: "Twitter", url: Site.socials.twitter, icon: Twitter },
+    { name: "Upwork", url: Site.socials.upwork, icon: Briefcase },
+    { name: "Fiverr", url: Site.socials.fiveer, icon: Layers },
+    { name: "Twitter / X", url: Site.socials.twitter, icon: Twitter }
   ];
 
   return (
-    <section className="py-16 md:py-24 max-w-4xl mx-auto px-6">
+    <section className="py-16 md:py-24 max-w-4xl mx-auto px-6 relative">
+      {/* Toast Notification Banner */}
+      {copied && (
+        <div className="fixed top-6 right-6 z-50 animate-bounce">
+          <div className="px-4 py-2.5 bg-postit text-pencil font-bold text-base border-[3px] border-pencil shadow-hard wobbly-border-1 flex items-center gap-2">
+            <Check size={18} strokeWidth={2.5} className="text-pen-green" />
+            <span>Email copied to clipboard! 📋</span>
+          </div>
+        </div>
+      )}
+
       <div className="relative bg-white border-[3px] border-pencil p-8 sm:p-12 shadow-hard-lg wobbly-border-1 text-center -rotate-1">
         <TapeStrip rotation="rotate-2" />
 
@@ -33,27 +61,46 @@ export function Contact() {
         </h2>
 
         <p className="text-xl text-pencil/80 max-w-xl mx-auto mb-8 font-patrick">
-          Whether you need a full-stack SaaS application, a custom Shopify
-          e-commerce solution, or team lead expertise — my inbox is open!
+          Whether you need a full-stack SaaS platform, AI RAG integration, custom e-commerce solution, or lead engineering expertise — my inbox is open!
         </p>
 
-        {/* Contact Info Grid */}
+        {/* Primary Contact Info Grid */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 max-w-3xl mx-auto mb-10">
-          {/* Email */}
-          <a
-            href={`mailto:${Site.email}`}
-            className="p-4 bg-muted-paper/40 border-2 border-pencil rounded-xl shadow-hard-sm hover:-translate-y-1 hover:bg-postit transition-all flex flex-col items-center gap-2 group"
-          >
-            <div className="p-3 bg-accent-red text-white border-2 border-pencil rounded-full group-hover:rotate-6 transition-transform">
-              <Mail size={22} strokeWidth={2.5} />
-            </div>
-            <span className="font-bold text-lg text-pencil font-kalam">
-              Email
-            </span>
-            <span className="text-sm font-bold text-pencil/80">
-              {Site.email}
-            </span>
-          </a>
+          {/* Email with Copy Action */}
+          <div className="p-4 bg-muted-paper/40 border-2 border-pencil rounded-xl shadow-hard-sm hover:-translate-y-1 hover:bg-postit transition-all flex flex-col items-center gap-2 group relative">
+            <a
+              href={`mailto:${Site.email}`}
+              className="flex flex-col items-center gap-2 w-full"
+            >
+              <div className="p-3 bg-accent-red text-white border-2 border-pencil rounded-full group-hover:rotate-6 transition-transform">
+                <Mail size={22} strokeWidth={2.5} />
+              </div>
+              <span className="font-bold text-lg text-pencil font-kalam">
+                Email
+              </span>
+              <span className="text-sm font-bold text-pencil/80 break-all">
+                {Site.email}
+              </span>
+            </a>
+
+            <button
+              onClick={handleCopyEmail}
+              className="mt-1 inline-flex items-center gap-1 px-3 py-1 bg-white border border-pencil rounded-md text-xs font-bold shadow-hard-sm hover:bg-postit transition-colors text-pencil"
+              aria-label="Copy Email Address"
+            >
+              {copied ? (
+                <>
+                  <Check size={14} className="text-pen-green" />
+                  <span>Copied!</span>
+                </>
+              ) : (
+                <>
+                  <Copy size={14} className="text-pencil" />
+                  <span>Copy Address</span>
+                </>
+              )}
+            </button>
+          </div>
 
           {/* WhatsApp */}
           <a
@@ -95,12 +142,12 @@ export function Contact() {
           </div>
         </div>
 
-        {/* Extendable Social Icons */}
-        <div className="pt-6 border-t-2 border-dashed border-pencil/20 flex flex-col items-center gap-3">
-          <span className="font-bold text-lg text-pencil/70">
-            Connect with me across the web:
+        {/* Extendable Social Channels Grid */}
+        <div className="pt-6 border-t-2 border-dashed border-pencil/20 flex flex-col items-center gap-4">
+          <span className="font-bold text-lg text-pencil/80 font-kalam">
+            Connect & Freelance Channels:
           </span>
-          <div className="flex items-center gap-4">
+          <div className="flex flex-wrap items-center justify-center gap-3">
             {socialLinks.map((item, idx) => {
               const IconComp = item.icon;
               return (
@@ -110,13 +157,14 @@ export function Contact() {
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label={item.name}
-                  className="p-3 bg-white border-2 border-pencil rounded-full shadow-hard-sm hover:bg-postit hover:scale-110 transition-all"
+                  className="inline-flex items-center gap-2 px-3.5 py-2 bg-white border-2 border-pencil rounded-lg shadow-hard-sm hover:bg-postit hover:-translate-y-0.5 transition-all text-pencil font-bold text-sm"
                 >
                   <IconComp
-                    size={22}
+                    size={18}
                     strokeWidth={2.5}
-                    className="text-pencil"
+                    className="text-accent-red"
                   />
+                  <span>{item.name}</span>
                 </a>
               );
             })}

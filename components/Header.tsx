@@ -11,7 +11,7 @@ export function Header() {
           href="/"
           className="text-3xl font-bold font-kalam tracking-wide text-pencil hover:text-accent-red transition-colors"
         >
-          Rao
+          {Site.nickName}
         </Link>
         <div className="h-6 w-[2px] bg-pencil/30" />
         <div className="flex items-center gap-3">

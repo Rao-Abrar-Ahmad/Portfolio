@@ -21,6 +21,7 @@ export const Site = {
     "https://docs.google.com/document/d/1kuKWZfv5tsO1tM83eZm8cJXDnisLz75T810Q8aIubYs/edit?usp=sharing",
   firstName: "Rao Abrar",
   lastName: "Ahmad",
+  nickName: "Rao",
   gender: "Male",
   marriedStatus: "Single",
   jobTitle: "Front-End Focused Full Stack Developer",

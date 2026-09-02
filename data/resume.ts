@@ -12,6 +12,7 @@ export type Project = {
   title: string;
   summary: string;
   description: string;
+  category?: "ai" | "saas" | "ecommerce" | "mobile";
   stack: string[];
   role?: string;
   metrics?: string[];
@@ -87,6 +88,7 @@ export const resumeData = {
     {
       slug: "vaultiq-canada",
       title: "VaultIQ Canada — AI-Powered Mortgage Knowledge Platform",
+      category: "ai",
       summary:
         "AI-powered mortgage knowledge & broker assistance platform built with Python, Flask, OpenAI RAG pipelines, PostgreSQL, and Linux VPS Nginx deployment.",
       description:
@@ -124,6 +126,7 @@ export const resumeData = {
     {
       slug: "event-ticketing",
       title: "SaaS Event Ticketing Platform",
+      category: "saas",
       summary:
         "Production SaaS ticketing platform hosting 4,000+ events and 260,000+ ticket sales with organizer CMS, marketing module, and real-time financial analytics.",
       description:
@@ -164,6 +167,7 @@ export const resumeData = {
     {
       slug: "ecommerce",
       title: "Photo & Document Printing E-commerce",
+      category: "ecommerce",
       summary:
         "Full-stack photo and document printing e-commerce platform covering physical print orders, digital sales, Stripe payment webhooks, and automated PDF delivery.",
       description:
@@ -204,6 +208,7 @@ export const resumeData = {
     {
       slug: "sosync",
       title: "SoSync — Crowdsourced Disaster Alert & Safety App",
+      category: "mobile",
       summary:
         "Cross-platform disaster alert app with real-time reporting, FCM push notifications, OpenAI report analysis, and interactive Google Maps mapping.",
       description:
@@ -241,6 +246,7 @@ export const resumeData = {
     {
       slug: "al-hayat",
       title: "Al-Hayat Blue Pottery — Headless Storefront",
+      category: "ecommerce",
       summary:
         "Fully responsive headless e-commerce storefront with dynamic product pages, category filtering, custom MongoDB Atlas CMS, and Cloudinary pipeline.",
       description:
@@ -275,6 +281,7 @@ export const resumeData = {
     {
       slug: "dailypin",
       title: "DailyPin — Windows Desktop Task Widget",
+      category: "mobile",
       summary:
         "Ultra-lightweight (~4.2 MB executable, ~30MB RAM), frameless, transparent Windows desktop widget built with Tauri v2, Rust, React 19, and Vite.",
       description:
@@ -313,6 +320,7 @@ export const resumeData = {
     {
       slug: "travel-booking",
       title: "Full-Stack Travel Booking Platform",
+      category: "saas",
       summary:
         "Full-stack property reservation platform with dynamic property listings, advanced search & filtering, secure booking workflows, and JWT/RBAC security.",
       description:

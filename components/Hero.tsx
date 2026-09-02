@@ -1,45 +1,43 @@
+"use client";
+
 import React from "react";
 import Image from "next/image";
-import { MessageSquare, FileText, Sparkles } from "lucide-react";
+import { FileText, Sparkles } from "lucide-react";
 import { Site } from "@/data/site";
 import { TapeStrip, ScribbledArrow } from "./HandDrawnDecorations";
 
 export function Hero() {
   return (
-    <section className="py-12 md:pb-20 md:pt-8 max-w-5xl mx-auto px-6 relative">
-      <div className="grid grid-cols-1 md:grid-cols-12 gap-10 items-center">
-        {/* Left Column: Copy & CTAs */}
-        <div className="md:col-span-7 flex flex-col items-start gap-6">
+    <section className="py-12 md:pb-12 md:pt-8 max-w-6xl mx-auto px-6 relative">
+      <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+        {/* Left Column: Personal Intro, Bio & CTAs */}
+        <div className="lg:col-span-8 flex flex-col items-start gap-6">
+          {/* Availability Badge */}
           <div className="inline-flex items-center gap-2 px-4 py-1.5 bg-postit border-2 border-pencil wobbly-badge shadow-hard-sm text-pencil font-bold text-sm md:text-base -rotate-1">
             <Sparkles size={18} strokeWidth={2.5} className="text-accent-red" />
-            <span>3+ Years Experience • Rawalpindi, Pakistan</span>
+            <span>Available for Full Stack & AI Projects • {Site.location}</span>
           </div>
 
-          <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold leading-tight tracking-tight text-pencil">
-            Crafting{" "}
-            <span className="relative inline-block text-accent-red">
-              High-Impact
-            </span>{" "}
-            SaaS & E-commerce Web Experiences.
-          </h1>
+          {/* Personal Heading */}
+          <div>
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight tracking-tight text-pencil mb-4">
+              Hi, I’m{" "}
+              <span className="font-kalam text-pen-blue underline decoration-accent-red decoration-wavy">
+                {Site.name}
+              </span>
+            </h1>
+            <p className="text-2xl sm:text-3xl font-bold text-accent-red mt-2 font-kalam">
+              {Site.jobTitle}
+            </p>
+          </div>
 
+          {/* Bio Intro Paragraph */}
           <p className="text-xl md:text-2xl text-pencil/90 leading-relaxed font-patrick">
-            Front-End Focused Full Stack Developer specializing in{" "}
-            <span className="font-bold underline decoration-accent-red decoration-2">
-              React
-            </span>
-            ,{" "}
-            <span className="font-bold underline decoration-pen-blue decoration-2">
-              Next.js
-            </span>
-            , <span className="font-bold">Node.js</span>, Nest.js, FastAPI &{" "}
-            <span className="font-bold underline decoration-pen-green decoration-2">
-              Shopify
-            </span>
-            .
+            Building high-performance <span className="font-bold underline decoration-pen-blue decoration-2">SaaS platforms</span>, <span className="font-bold underline decoration-accent-red decoration-2">AI RAG pipelines</span>, and custom <span className="font-bold underline decoration-pen-green decoration-2">e-commerce solutions</span>. From complex REST APIs to slick hand-crafted interfaces.
           </p>
 
-          <div className="flex flex-wrap items-center gap-4 pt-2 relative w-full sm:w-auto">
+          {/* Call to Actions */}
+          <div className="flex flex-wrap items-center gap-4 pt-4 relative w-full sm:w-auto">
             {/* WhatsApp CTA */}
             <a
               href={Site.whatsappUrl}
@@ -78,8 +76,8 @@ export function Hero() {
         </div>
 
         {/* Right Column: Hero Photo Mounted in Rotated Frame */}
-        <div className="md:col-span-5 flex justify-center relative">
-          <div className="relative p-6 bg-white border-[3px] border-pencil shadow-hard-lg wobbly-border-3 -rotate-2 hover:rotate-1 transition-transform duration-300 group max-w-xs sm:max-w-sm">
+        <div className="lg:col-span-4 flex justify-center relative">
+          <div className="relative p-6 bg-white border-[3px] border-pencil shadow-hard-lg wobbly-border-3 -rotate-2 hover:rotate-1 transition-transform duration-300 group max-w-xs sm:max-w-xs w-full">
             {/* Tape Strip Pinned at Top */}
             <TapeStrip rotation="-rotate-3" />
 
@@ -87,7 +85,7 @@ export function Hero() {
             <div className="relative w-48 h-48 sm:w-60 sm:h-60 mx-auto rounded-full overflow-hidden border-[3px] border-pencil shadow-inner bg-muted-paper/50">
               <Image
                 src={Site.profilePic}
-                alt="Rao Abrar Ahmad"
+                alt={Site.name}
                 fill
                 sizes="(max-width: 768px) 192px, 240px"
                 className="object-cover group-hover:scale-105 transition-transform duration-300"
@@ -97,10 +95,10 @@ export function Hero() {
 
             {/* Caption Tag */}
             <div className="mt-4 text-center">
-              <span className="inline-block px-3 py-1 bg-postit border-2 border-pencil text-pencil font-bold text-base rotate-1 shadow-hard-sm">
-                Rao Abrar Ahmad
+              <span className="inline-block px-3 py-1 bg-postit border-2 border-pencil text-pencil font-bold text-base rotate-1 shadow-hard-sm font-kalam">
+                {Site.name}
               </span>
-              <p className="text-sm text-pencil/80 mt-1 font-bold">
+              <p className="text-xs sm:text-sm text-pencil/80 mt-1 font-bold">
                 {Site.jobTitle}
               </p>
             </div>
