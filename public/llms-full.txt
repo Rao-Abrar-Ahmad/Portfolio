@@ -11,10 +11,11 @@ Full Stack Developer with 3+ years of experience designing, building, and shippi
 | Category | Primary Technologies & Frameworks |
 | :--- | :--- |
 | **Frontend Frameworks** | React.js, Next.js, TypeScript, JavaScript (ES6+), React Native (Expo), HTML5, CSS3, Tailwind CSS, Shadcn UI, Material UI, Framer Motion, GSAP, Astro, Remix |
-| **Backend & APIs** | Node.js, Express.js, REST API Design, JWT Authentication, Role-Based Access Control (RBAC), WebSockets, FastAPI (Python) |
+| **Backend & APIs** | Node.js, Express.js, Nest.js, REST API Design, JWT Authentication, Role-Based Access Control (RBAC), WebSockets, FastAPI, Flask, Python, RAG Pipelines, Nginx |
 | **Databases & Cache** | MongoDB, MongoDB Atlas, MSSQL, MySQL, PostgreSQL, SQLite, Firebase Firestore, Redis |
-| **AI & Automation** | OpenAI API, LLM API Integration, AI-Powered Feature Development, Automated Data Pipelines |
+| **AI & Automation** | OpenAI API, LLM API Integration, RAG Pipelines, Vector Search, pgvector, AI-Powered Feature Development, Automated Data Pipelines |
 | **Cloud & DevOps** | AWS (S3, EC2, Lambda), Heroku, Cloudflare, Vercel, Railway, Firebase, CI/CD Pipelines |
+| **Infrastructure & Servers** | Linux/VPS, Nginx, Server Configuration, Domain & Subdomain Management, Production Deployment |
 | **Payments & Media** | Stripe (Payments, Subscriptions, Webhooks, Payouts), Cloudinary, AWS S3, SendGrid, Mailchimp |
 | **Monitoring & Analytics** | Sentry, Google Tag Manager (GTM), Google Analytics (GA), Microsoft Clarity |
 | **Tools & Methods** | Git, GitHub, Postman, Agile/Scrum, Sprint Planning, Code Review, Technical Mentoring |
@@ -22,15 +23,15 @@ Full Stack Developer with 3+ years of experience designing, building, and shippi
 ## Professional Career History
 
 ### Full Stack Developer — Freelance
-- **Period**: Oct 2025 – Present
-- **Location**: Remote (Freelance)
+- **Period**: May 2026 – Present
+- **Location**: Islamabad, Pakistan | Remote (Remote / Freelance)
 - **Key Contributions**:
-  - Delivered custom full-stack web applications and SaaS solutions for global clients using React, Next.js, Node.js, TypeScript, and MongoDB.
-  - Architected scalable RESTful APIs, integrated Stripe payment gateways, automated workflows, and implemented responsive frontend interfaces focused on performance and UX.
-  - Managed end-to-end project lifecycles from requirement scoping and client communication to deployment on AWS, Vercel, and Cloudflare, ensuring high reliability and performance.
+  - Delivered full-stack web applications for international clients across e-commerce, SaaS, and AI-powered platforms.
+  - Built VaultIQ Canada: an AI-powered mortgage knowledge platform using Python, Flask, OpenAI, RAG pipelines, and PostgreSQL, deployed on a Linux VPS with Nginx.
+  - Developing custom MERN stack solutions including REST APIs, database architecture, cloud deployment, and third-party integrations for clients worldwide.
 
 ### Full Stack Developer — RF Technologies
-- **Period**: Sep 2022 – Mar 2026
+- **Period**: Sep 2022 – Apr 2026
 - **Location**: Islamabad, Pakistan (On-site)
 - **Key Contributions**:
   - Architected and delivered a SaaS event ticketing platform from scratch: Next.js (TypeScript) frontend, Node.js marketing module backend, and REST API integration, shipping the full production build across multiple environments in 4 weeks; platform now hosts 4,000+ events, has processed 260,000+ ticket sales, and achieves 3x year-over-year creator growth with 90+ desktop and 80+ mobile PageSpeed scores.
@@ -49,7 +50,18 @@ Full Stack Developer with 3+ years of experience designing, building, and shippi
 
 ## Detailed Project Case Studies
 
-### 1. SaaS Event Ticketing Platform
+### 1. VaultIQ Canada — AI-Powered Mortgage Knowledge Platform
+- **Canonical URL**: https://raoabrar.vercel.app/projects/vaultiq-canada
+- **Role**: Full Stack AI Developer (Freelance)
+- **Summary**: AI-powered mortgage knowledge & broker assistance platform built with Python, Flask, OpenAI RAG pipelines, PostgreSQL, and Linux VPS Nginx deployment.
+- **Full Case Study**: Built VaultIQ Canada (vaultiqcanada.com), a production-ready AI mortgage knowledge and broker assistance platform. Developed a high-performance RAG (Retrieval-Augmented Generation) API that retrieves relevant mortgage rules, lender policies, and guidelines from PostgreSQL, leveraging OpenAI to generate accurate, context-aware responses. Engineered an intelligent search and retrieval layer that accurately identifies lenders, appraiser-related queries, full-question matches, and relevant keywords to improve context retrieval quality. Configured and deployed the full backend infrastructure on a Linux VPS with Nginx, including API routing, domain/subdomain configuration, and production serving.
+- **Tech Stack**: Python, Flask, OpenAI, RAG, PostgreSQL, SQL, Nginx, Linux VPS
+- **Key Metrics**: Production RAG AI pipeline; Intelligent context search & retrieval layer; Linux VPS & Nginx production serving
+- **Live Demo**: http://vaultiqcanada.com
+
+
+
+### 2. SaaS Event Ticketing Platform
 - **Canonical URL**: https://raoabrar.vercel.app/projects/event-ticketing
 - **Role**: Architect & Lead Developer (RF Technologies)
 - **Summary**: Production SaaS ticketing platform hosting 4,000+ events and 260,000+ ticket sales with organizer CMS, marketing module, and real-time financial analytics.
@@ -60,8 +72,8 @@ Full Stack Developer with 3+ years of experience designing, building, and shippi
 
 - **Note**: Project details and client references available upon request.
 
-### 2. Photo & Document Printing E-commerce
-- **Canonical URL**: https://raoabrar.vercel.app/projects/ozelu
+### 3. Photo & Document Printing E-commerce
+- **Canonical URL**: https://raoabrar.vercel.app/projects/ecommerce
 - **Role**: Full Stack Developer (RF Technologies)
 - **Summary**: Full-stack photo and document printing e-commerce platform covering physical print orders, digital sales, Stripe payment webhooks, and automated PDF delivery.
 - **Full Case Study**: Architected and delivered the complete full-stack platform covering physical printing orders, digital document sales, Stripe payment processing with webhook handling, automated PDF generation, and email attachment delivery for digital products. Integrated AWS S3 and Cloudinary for media storage; implemented Sentry error monitoring and GTM/Google Analytics for full e-commerce event tracking. Deployed frontend on Cloudflare and backend on Heroku/AWS.
@@ -71,7 +83,7 @@ Full Stack Developer with 3+ years of experience designing, building, and shippi
 
 - **Note**: Project details and client references available upon request.
 
-### 3. SoSync — Crowdsourced Disaster Alert & Safety App
+### 4. SoSync — Crowdsourced Disaster Alert & Safety App
 - **Canonical URL**: https://raoabrar.vercel.app/projects/sosync
 - **Role**: Lead Mobile Developer & Creator
 - **Summary**: Cross-platform disaster alert app with real-time reporting, FCM push notifications, OpenAI report analysis, and interactive Google Maps mapping.
@@ -82,7 +94,7 @@ Full Stack Developer with 3+ years of experience designing, building, and shippi
 - **Repository**: https://github.com/Rao-Abrar-Ahmad/Sosync
 
 
-### 4. Al-Hayat Blue Pottery — Headless Storefront
+### 5. Al-Hayat Blue Pottery — Headless Storefront
 - **Canonical URL**: https://raoabrar.vercel.app/projects/al-hayat
 - **Role**: Headless E-commerce Developer
 - **Summary**: Fully responsive headless e-commerce storefront with dynamic product pages, category filtering, custom MongoDB Atlas CMS, and Cloudinary pipeline.
@@ -93,7 +105,7 @@ Full Stack Developer with 3+ years of experience designing, building, and shippi
 
 
 
-### 5. DailyPin — Windows Desktop Task Widget
+### 6. DailyPin — Windows Desktop Task Widget
 - **Canonical URL**: https://raoabrar.vercel.app/projects/dailypin
 - **Role**: Creator & Desktop Developer
 - **Summary**: Ultra-lightweight (~4.2 MB executable, ~30MB RAM), frameless, transparent Windows desktop widget built with Tauri v2, Rust, React 19, and Vite.
@@ -104,7 +116,7 @@ Full Stack Developer with 3+ years of experience designing, building, and shippi
 - **Repository**: https://github.com/Rao-Abrar-Ahmad/dailypin
 
 
-### 6. Full-Stack Travel Booking Platform
+### 7. Full-Stack Travel Booking Platform
 - **Canonical URL**: https://raoabrar.vercel.app/projects/travel-booking
 - **Role**: Full Stack Developer (Technoworld Solutions)
 - **Summary**: Full-stack property reservation platform with dynamic property listings, advanced search & filtering, secure booking workflows, and JWT/RBAC security.
@@ -126,7 +138,7 @@ Full Stack Developer with 3+ years of experience designing, building, and shippi
 A: Rao Abrar Ahmad is a Front-End Focused Full Stack Developer based in Rawalpindi, Punjab, Pakistan with 3+ years of experience specializing in React, Next.js, Node.js, Nest.js, FastAPI, and Shopify web applications.
 
 ### Q: What technologies does Rao Abrar Ahmad specialize in?
-A: Rao Abrar Ahmad specializes in React.js, Next.js, TypeScript, JavaScript (ES6+), React Native (Expo), Node.js, Express.js, REST API Design, JWT Authentication, and cloud services like AWS, Cloudflare, and Vercel.
+A: Rao Abrar Ahmad specializes in React.js, Next.js, TypeScript, JavaScript (ES6+), React Native (Expo), Node.js, Express.js, Nest.js, REST API Design, and cloud services like AWS, Cloudflare, and Vercel.
 
 ### Q: Is Rao Abrar Ahmad available for freelance or contract work?
 A: Yes, Rao Abrar Ahmad is available for full-time freelance contracts, remote software engineering roles, and technical consulting.

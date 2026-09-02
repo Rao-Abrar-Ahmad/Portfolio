@@ -46,19 +46,19 @@ export const resumeData = {
     {
       company: "Freelance",
       role: "Full Stack Developer",
-      period: "Oct 2025 – Present",
-      location: "Remote",
-      type: "Freelance",
+      period: "May 2026 – Present",
+      location: "Islamabad, Pakistan | Remote",
+      type: "Remote / Freelance",
       bullets: [
-        "Delivered custom full-stack web applications and SaaS solutions for global clients using React, Next.js, Node.js, TypeScript, and MongoDB.",
-        "Architected scalable RESTful APIs, integrated Stripe payment gateways, automated workflows, and implemented responsive frontend interfaces focused on performance and UX.",
-        "Managed end-to-end project lifecycles from requirement scoping and client communication to deployment on AWS, Vercel, and Cloudflare, ensuring high reliability and performance.",
+        "Delivered full-stack web applications for international clients across e-commerce, SaaS, and AI-powered platforms.",
+        "Built VaultIQ Canada: an AI-powered mortgage knowledge platform using Python, Flask, OpenAI, RAG pipelines, and PostgreSQL, deployed on a Linux VPS with Nginx.",
+        "Developing custom MERN stack solutions including REST APIs, database architecture, cloud deployment, and third-party integrations for clients worldwide.",
       ],
     },
     {
       company: "RF Technologies",
       role: "Full Stack Developer",
-      period: "Sep 2022 – Mar 2026",
+      period: "Sep 2022 – Apr 2026",
       location: "Islamabad, Pakistan",
       type: "On-site",
       bullets: [
@@ -84,6 +84,43 @@ export const resumeData = {
   ] as ExperienceItem[],
 
   projects: [
+    {
+      slug: "vaultiq-canada",
+      title: "VaultIQ Canada — AI-Powered Mortgage Knowledge Platform",
+      summary:
+        "AI-powered mortgage knowledge & broker assistance platform built with Python, Flask, OpenAI RAG pipelines, PostgreSQL, and Linux VPS Nginx deployment.",
+      description:
+        "Built VaultIQ Canada (vaultiqcanada.com), a production-ready AI mortgage knowledge and broker assistance platform. Developed a high-performance RAG (Retrieval-Augmented Generation) API that retrieves relevant mortgage rules, lender policies, and guidelines from PostgreSQL, leveraging OpenAI to generate accurate, context-aware responses. Engineered an intelligent search and retrieval layer that accurately identifies lenders, appraiser-related queries, full-question matches, and relevant keywords to improve context retrieval quality. Configured and deployed the full backend infrastructure on a Linux VPS with Nginx, including API routing, domain/subdomain configuration, and production serving.",
+      stack: [
+        "Python",
+        "Flask",
+        "OpenAI",
+        "RAG",
+        "PostgreSQL",
+        "SQL",
+        "Nginx",
+        "Linux VPS",
+      ],
+      role: "Full Stack AI Developer (Freelance)",
+      metrics: [
+        "Production RAG AI pipeline",
+        "Intelligent context search & retrieval layer",
+        "Linux VPS & Nginx production serving",
+      ],
+      bullets: [
+        "Built a production-ready RAG API that retrieves relevant mortgage and lender information from PostgreSQL and uses OpenAI to generate accurate, context-aware responses.",
+        "Developed an intelligent search and retrieval layer that identifies lenders, appraiser-related queries, full-question matches, and relevant keywords to improve the quality of retrieved information.",
+        "Deployed and configured the complete backend infrastructure on a Linux VPS with Nginx, including API routing, domain/subdomain configuration, and production serving.",
+      ],
+      liveUrl: "http://vaultiqcanada.com",
+      confidential: false,
+      thumbnail:
+        "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=800&q=80",
+      images: [
+        "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1200&q=80",
+      ],
+    },
     {
       slug: "event-ticketing",
       title: "SaaS Event Ticketing Platform",
@@ -125,7 +162,7 @@ export const resumeData = {
       ],
     },
     {
-      slug: "ozelu",
+      slug: "ecommerce",
       title: "Photo & Document Printing E-commerce",
       summary:
         "Full-stack photo and document printing e-commerce platform covering physical print orders, digital sales, Stripe payment webhooks, and automated PDF delivery.",
@@ -330,11 +367,16 @@ export const resumeData = {
     backend: [
       "Node.js",
       "Express.js",
+      "Nest.js",
       "REST API Design",
       "JWT Authentication",
       "Role-Based Access Control (RBAC)",
       "WebSockets",
-      "FastAPI (Python)",
+      "FastAPI",
+      "Flask",
+      "Python",
+      "RAG Pipelines",
+      "Nginx",
     ],
     databases: [
       "MongoDB",
@@ -349,6 +391,9 @@ export const resumeData = {
     aiAutomation: [
       "OpenAI API",
       "LLM API Integration",
+      "RAG Pipelines",
+      "Vector Search",
+      "pgvector",
       "AI-Powered Feature Development",
       "Automated Data Pipelines",
     ],
@@ -360,6 +405,13 @@ export const resumeData = {
       "Railway",
       "Firebase",
       "CI/CD Pipelines",
+    ],
+    infrastructureServers: [
+      "Linux/VPS",
+      "Nginx",
+      "Server Configuration",
+      "Domain & Subdomain Management",
+      "Production Deployment",
     ],
     paymentsMedia: [
       "Stripe (Payments, Subscriptions, Webhooks, Payouts)",

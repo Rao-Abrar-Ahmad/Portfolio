@@ -15,7 +15,8 @@ function generateLlmsTxt() {
 - **Backend & Microservices**: ${resumeData.skills.backend.join(", ")}.
 - **Databases & Caching**: ${resumeData.skills.databases.join(", ")}.
 - **AI & Automation**: ${resumeData.skills.aiAutomation.join(", ")}.
-- **Cloud, DevOps & Hosting**: ${resumeData.skills.cloudDevOps.join(", ")}.
+- **Cloud & DevOps**: ${resumeData.skills.cloudDevOps.join(", ")}.
+- **Infrastructure & Servers**: ${resumeData.skills.infrastructureServers.join(", ")}.
 - **Payments, Media & Email**: ${resumeData.skills.paymentsMedia.join(", ")}.
 - **Monitoring & Analytics**: ${resumeData.skills.monitoringAnalytics.join(", ")}.
 - **Development Tools & Methods**: ${resumeData.skills.toolsMethods.join(", ")}.
@@ -75,6 +76,7 @@ ${resumeData.summary}
 | **Databases & Cache** | ${resumeData.skills.databases.join(", ")} |
 | **AI & Automation** | ${resumeData.skills.aiAutomation.join(", ")} |
 | **Cloud & DevOps** | ${resumeData.skills.cloudDevOps.join(", ")} |
+| **Infrastructure & Servers** | ${resumeData.skills.infrastructureServers.join(", ")} |
 | **Payments & Media** | ${resumeData.skills.paymentsMedia.join(", ")} |
 | **Monitoring & Analytics** | ${resumeData.skills.monitoringAnalytics.join(", ")} |
 | **Tools & Methods** | ${resumeData.skills.toolsMethods.join(", ")} |
